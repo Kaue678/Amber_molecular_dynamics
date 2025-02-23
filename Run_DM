@@ -1,0 +1,5 @@
+pmemd.cuda -O -i prod.in -p complex_box.top -c prod25ns.rst -o prod30ns.out -r prod30ns.rst -x prod30ns.mdcrd -ref prod25ns.rst &&
+pmemd.cuda -O -i prod.in -p complex_box.top -c prod30ns.rst -o prod35ns.out -r prod35ns.rst -x prod35ns.mdcrd -ref prod30ns.rst &&
+pmemd.cuda -O -i prod.in -p complex_box.top -c prod35ns.rst -o prod40ns.out -r prod40ns.rst -x prod40ns.mdcrd -ref prod35ns.rst &&
+pmemd.cuda -O -i prod.in -p complex_box.top -c prod40ns.rst -o prod45ns.out -r prod45ns.rst -x prod45ns.mdcrd -ref prod40ns.rst &&
+pmemd.cuda -O -i prod.in -p complex_box.top -c prod45ns.rst -o prod50ns.out -r prod50ns.rst -x prod50ns.mdcrd -ref prod45ns.rst
